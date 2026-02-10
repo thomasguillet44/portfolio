@@ -1,0 +1,28 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - main  # ou ta branche de prod
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Copy SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_acces_gh
+          chmod 600 ~/.ssh/id_acces_gh
+
+      - name: Add server to known_hosts
+        run: |
+          ssh-keyscan -p 54987 -H 51.68.234.182 >> ~/.ssh/known_hosts
+
+      - name: Deploy on server
+        run: |
+          ssh -i ~/.ssh/id_acces_gh -p 54987 debian@51.68.234.182 "cd /home/debian/portfolio && git pull && docker compose -f docker-compose.production.yml up -d --build"
