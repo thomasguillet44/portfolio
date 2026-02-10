@@ -1,0 +1,13 @@
+* {
+    background-color: #121212;
+    color: #F5F5F5;
+
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.font-playfair { font-family: 'Playfair Display', serif; }
+.font-bitcount { font-family: 'Bitcount Single', monospace; }
