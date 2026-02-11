@@ -28,6 +28,7 @@ jobs:
           ssh -i ~/.ssh/id_acces_gh -p 54987 debian@51.68.234.182 "
             cd /home/debian/portfolio &&
             git pull &&
+            docker compose -f docker-compose.production.yml down &&
             docker compose -f docker-compose.production.yml build --no-cache &&
             docker compose -f docker-compose.production.yml up -d
           "
