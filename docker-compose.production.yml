@@ -7,6 +7,5 @@ services:
     ports:
       - "80:80"
     volumes:
-      - .:/portfolio
-      - /portfolio/node_modules
+      - ./dist:/usr/share/nginx/html 
     restart: always
