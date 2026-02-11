@@ -4,7 +4,7 @@
             <slot name="header"></slot>
         </header> 
 
-        <main class="main-content">
+        <main class="main">
             <slot name="main"></slot>
         </main>
         
@@ -25,11 +25,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-.main-content {
-    display: flex;
     justify-content: center;
 }
 

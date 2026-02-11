@@ -1,14 +1,22 @@
 <template>
-    <div class="box">
+    <div class="box" @click="emitsOpen">
         <span class="section-title Playfair Display"> {{ title }} </span>
         <div class="icon-container"><i :class="icon"></i></div>
     </div>
 </template>
 <script setup>
 const props = defineProps({
+    id: Number,
     icon: String,
     title: String
 })
+
+const emits = defineEmits(['open']);
+
+function emitsOpen() {
+    emits('open', {id: props.id});
+}
+
 </script>
 <style scoped>
 .box {
@@ -20,6 +28,12 @@ const props = defineProps({
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20% 80%;
+}
+
+.box:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 3px 3px 0 white;
+    cursor: pointer;
 }
 
 .icon-container {
