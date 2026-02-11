@@ -12,7 +12,7 @@
         <i class="bi bi-envelope"></i>
     </a>
 
-    <a href="/cv-thomas-guillet.pdf" download="CV-Thomas-Guillet.pdf" class="button-download no-underline">
+    <a href="/CV_GUILLET_Thomas.pdf" download="CV_GUILLET_Thomas.pdf" class="button-download no-underline">
         <div class="content-button-download">
             CV <i class="bi bi-download"></i>
         </div> 
