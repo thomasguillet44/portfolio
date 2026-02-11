@@ -6,6 +6,4 @@ services:
     container_name: portfolio
     ports:
       - "80:80"
-    volumes:
-      - ./dist:/usr/share/nginx/html 
     restart: always
