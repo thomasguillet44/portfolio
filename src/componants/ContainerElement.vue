@@ -28,6 +28,8 @@ const props = defineProps({
     justify-content: center;
     align-items: center;
     padding-bottom: 10vh;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .section-title {

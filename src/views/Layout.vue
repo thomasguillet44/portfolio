@@ -32,4 +32,10 @@
     display: flex;
     justify-content: center;
 }
+
+.footer {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
 </style>
