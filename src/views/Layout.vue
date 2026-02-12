@@ -17,7 +17,7 @@
 .layout {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 30% 50% 20%;
+    grid-template-rows: 35% 45% 20%;
     height: 100vh;
 }
 

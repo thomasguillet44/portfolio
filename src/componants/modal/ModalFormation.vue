@@ -3,7 +3,7 @@
         <div class="overlay" @click="emitsClose"></div>
         <div class="modale">
             <div class="header-modal">
-                <h2 class="modale-title Playfair Display">Formation</h2>
+                <h2 class="modale-title">Formation</h2>
                 <i class="bi bi-x-square close-icon" @click="emitsClose"></i>
             </div>            
             <div class="tabs">                
@@ -21,20 +21,20 @@
                 >
                     Télécom SudParis
                 </button>
+            </div>              
+            <div class="tab-content" v-if="activeTab === 'livet'">
+                <LivetContent></LivetContent>
             </div>
-            <div class="tab-content">                
-                <div v-if="activeTab === 'livet'">
-                    <p>Contenu du Lycée Eugène Livet</p>
-                </div>
-                <div v-if="activeTab === 'telecom'">
-                    <p>Contenu de Télécom SudParis</p>
-                </div>
+            <div class="tab-content" v-if="activeTab === 'telecom'">
+                <TelecomContent></TelecomContent>
             </div>
         </div>
     </div> 
 </template>
 <script setup>
 import { ref } from 'vue';
+import LivetContent from '../content/formation/LivetContent.vue';
+import TelecomContent from '../content/formation/TelecomContent.vue';
 
 const emits = defineEmits(['close']);
 

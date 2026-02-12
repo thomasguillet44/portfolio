@@ -3,7 +3,7 @@
         <div class="overlay" @click="emitsClose"></div>
         <div class="modale">
             <div class="header-modal">
-                <h2 class="modale-title Playfair Display">Expériences</h2>
+                <h2 class="modale-title">Expériences</h2>
                 <i class="bi bi-x-square close-icon" @click="emitsClose"></i>
             </div>
             <div class="tabs">
@@ -29,22 +29,23 @@
                     MitsioMotu
                 </button>
             </div>
-            <div class="tab-content">
-                <div v-if="activeTab === 'setics'">
-                    <p>Contenu de Setics</p>
-                </div>
-                <div v-if="activeTab === 'bnf'">
-                    <p>Contenu de BnF</p>
-                </div>
-                <div v-if="activeTab === 'mitsiomotu'">
-                    <p>Contenu de MitsioMotu</p>
-                </div>
+            <div class="tab-content" v-if="activeTab === 'setics'">
+                <SeticsContent></SeticsContent>
+            </div>
+            <div class="tab-content" v-if="activeTab === 'bnf'">
+                <BnFContent></BnFContent>
+            </div>
+            <div class="tab-content" v-if="activeTab === 'mitsiomotu'">
+                <MitsioContent></MitsioContent>
             </div>
         </div>
     </div> 
 </template>
 <script setup>
 import { ref } from 'vue';
+import BnFContent from '../content/experience/BnFContent.vue';
+import SeticsContent from '../content/experience/SeticsContent.vue';
+import MitsioContent from '../content/experience/MitsioContent.vue';
 
 const emits = defineEmits(['close']);
 

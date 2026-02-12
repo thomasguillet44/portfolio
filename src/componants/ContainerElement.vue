@@ -1,6 +1,6 @@
 <template>
     <div class="box" @click="emitsOpen">
-        <span class="section-title Playfair Display"> {{ title }} </span>
+        <span class="section-title"> {{ title }} </span>
         <div class="icon-container"><i :class="icon"></i></div>
     </div>
 </template>
