@@ -1,8 +1,5 @@
 <template>
-    <div class="techno-wrapper">
-        <div class="icon-container"><i :class="icon"></i></div>
-        <span>{{ title }}</span>       
-    </div>
+    <div class="icon-container"><i :class="icon"></i></div> 
 </template>
 <script setup>
 const props = defineProps({
@@ -11,21 +8,13 @@ const props = defineProps({
 })
 </script>
 <style>
-.techno-wrapper {
-    display: flex;
-    border: 2px solid #F5F5F5;
-    border-radius: 3px;
-    margin: 3px;
-    padding: 3px;
+.icon-container {
+    margin: 2px;
+    font-size: 5vh;
     cursor: pointer;
 }
 
-.techno-wrapper:hover {
-    transform: translate(-2px, -2px);
-    box-shadow: 3px 3px 0 white;
-}
-
-.icon-container {
-    margin-right: 2px;
+.icon-container:hover {
+    transform: translateY(-2px);
 }
 </style>
