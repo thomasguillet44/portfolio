@@ -1,6 +1,6 @@
 <template>
     <div class="name-owner">Thomas Guillet</div>
-    <div class="work-occupation">Développeur fullstack Paris</div>
+    <div class="work-occupation">Développeur fullstack</div>
     <div class="container-techno">
         <TechnologiesContainer
             v-for="(item, key) in parameters"
