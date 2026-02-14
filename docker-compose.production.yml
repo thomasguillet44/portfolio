@@ -1,9 +1,30 @@
+version: "3"
+
 services:
   portfolio:
     build:
       context: ./
       dockerfile: ./src/dockerfiles/Dockerfile.prod
     container_name: portfolio
+    restart: always
+    expose:
+      - "80"
+    networks:
+      - web
+
+  nginx-proxy-manager:
+    image: jc21/nginx-proxy-manager:latest
+    container_name: nginx-proxy-manager
+    restart: always
     ports:
       - "80:80"
-    restart: always
+      - "83:83"
+      - "443:443"
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+    networks:
+      - web
+
+networks:
+  web:
