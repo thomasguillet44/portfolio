@@ -17,8 +17,14 @@
 .layout {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 35% 45% 20%;
-    height: 100vh;
+    grid-template-rows: auto auto auto;
+    min-height: 100dvh;
+}
+
+@media (min-width: 769px) {
+    .layout {
+        grid-template-rows: 3fr 4fr 2fr;
+    }
 }
 
 .header {

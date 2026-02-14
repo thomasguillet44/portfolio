@@ -43,12 +43,22 @@ a {
     background: #121212;
     border: 3px solid #F5F5F5;
     border-radius: 10px;
-    width: 73vh;
-    height: 80vh;
     padding: 10px;
     z-index: 1001;
     display: flex;
     flex-direction: column;
+
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    max-height: 90dvh;
+}
+
+@media (min-width: 769px) {
+    .modale {
+        width: 73vh;
+        height: 80vh;
+    }
 }
 
 .modale-title {

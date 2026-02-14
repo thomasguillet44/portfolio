@@ -20,7 +20,7 @@ function emitsOpen() {
 </script>
 <style scoped>
 .box {
-    width: 25%;
+    width: 90%;
     border: 3px solid #F5F5F5;
     border-radius: 10px;
     margin: 10px;
@@ -50,5 +50,11 @@ function emitsOpen() {
     margin-right: 5px;
     margin-left: 5px;
     font-size: 4vh;
+}
+
+@media (min-width: 769px) {
+    .box {
+        width: 25%;
+    }
 }
 </style>

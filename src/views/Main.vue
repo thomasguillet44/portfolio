@@ -63,6 +63,15 @@ function openModal(data) {
 <style>
 .main-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+/* affichage ordi */
+@media (min-width: 769px) {
+    .main-content {
+        flex-direction: row;
+    }
 }
 </style>
