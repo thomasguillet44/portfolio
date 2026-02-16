@@ -1,18 +1,27 @@
 <template>
     <div class="projet-wrapper">
-        <div class="image-container">
-            <a href="http://51.68.234.182:8081/" target="_blank">
-                <img src="/boggle-screen.png" alt="Photo"/>
+        <div class="image-container" :title=explanation>
+            <a :href=link target="_blank">
+                <img :src=image alt="Photo"/>
             </a>
         </div>
         <div class="description">
-            Boggle
-            <a href="https://github.com/thomasguillet44/boggle" target="_blank">
+            {{ name }}
+            <a :href=git target="_blank">
                 <i class="icon-contact bi bi-github"></i>
             </a>
         </div>
     </div>
 </template>
+<script setup>
+const props = defineProps({
+    name: String,
+    link: String,
+    git: String,
+    image: String,
+    explanation: String
+})
+</script>
 <style scoped>
 .projet-wrapper {
     display: grid;
