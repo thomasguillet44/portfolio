@@ -41,7 +41,7 @@ const parameters = ref({
     osmSportRequest : {
         id: 2,
         name: "Sport Finder",
-        link: "https://github.com/thomasguillet44/OSM-Sport-Request",
+        link: "https://sportfinder.thomasgui.fr/login",
         git: "https://github.com/thomasguillet44/OSM-Sport-Request",
         image: "/sportfinder-screen.png",
         explanation: "Outil de recherche de terrain de sport aux alentours"

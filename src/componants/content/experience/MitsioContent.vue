@@ -21,6 +21,9 @@
         Ce dernier est alimenté par des données obsolètes, j'ai donc mis en place un flux d'actualisation, avec
         une <strong>plateforme web de validation de données</strong>.
       </p>
+      <p>
+        <video controls src="/public/demo_plateforme_validation_v2.mp4" width="100%"></video>
+      </p>
     </div>
 
     <div class="date">2024 - 2025</div>
