@@ -2,22 +2,23 @@
   <div class="tab-main-content">
     <div class="info-container">
       <p class="main-title">
-        <a href="https://www.telecom-sudparis.eu/" target="_blank">Grande école d'ingénieur</a> 
+        <a href="https://www.telecom-sudparis.eu/" target="_blank">
+          {{$t('studies.engineering_school.class')}}
+        </a> 
       </p>
       <p class="location">Evry, France</p>
-      <p class="subtitle">Tronc commun :</p>
+      <p class="subtitle">{{$t('studies.engineering_school.subject_title')}}</p>
       <ul class="liste">
-        <li>Statistiques, Probabilités</li>
-        <li>Réseau, Théorie du signal & communication, Optimisation</li>
-        <li>Bash, Java, PHP/Spring</li>
-        <li>Anglais, Italien, Sciences Humaines</li>
+        <li>{{$t('studies.engineering_school.math')}}</li>
+        <li>{{$t('studies.engineering_school.network')}}</li>
+        <li>{{$t('studies.engineering_school.computer_science')}}</li>
+        <li>{{$t('studies.engineering_school.language')}}</li>
       </ul>
-      <p class="subtitle">Spécialité :</p>
-      <p>Analyse d'image et machine learning </p>
-      <p class="subtitle">Projets</p>
+      <p class="subtitle">{{$t('studies.engineering_school.speciality_title')}} :</p>
+      <p>{{$t('studies.engineering_school.speciality_content')}}</p>
+      <p class="subtitle">{{$t('studies.engineering_school.project_title')}}</p>
       <p> 
-        Reconnaissance des émotions par apprentissage par ordinateur, diagnostic de Alzheimer par
-        analyse de voix
+        {{$t('studies.engineering_school.project_content')}}
       </p>
     </div>
 

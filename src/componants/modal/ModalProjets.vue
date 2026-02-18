@@ -22,21 +22,25 @@
 </template>
 <script setup>
 import ProjetContainer from '../content/projets/ProjetContainer.vue';
-import { ref } from 'vue';
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue';
+
+const { t } = useI18n()
+
 const emits = defineEmits(['close']);
 
 function emitsClose() {
     emits('close');
 }
 
-const parameters = ref({
+const parameters = computed(() => ({
     boggle : {
         id: 1,
         name: "Boggle",
         link: "https://boggle.thomasgui.fr",
         git: "https://github.com/thomasguillet44/boggle",
         image: "/boggle-screen.png",
-        explanation: "Jeu en ligne, vous avez 3 minutes pour trouver le plus de mots possibles"
+        explanation: t('projects.boggle_explanation')
     },
     osmSportRequest : {
         id: 2,
@@ -44,7 +48,7 @@ const parameters = ref({
         link: "https://sportfinder.thomasgui.fr/login",
         git: "https://github.com/thomasguillet44/OSM-Sport-Request",
         image: "/sportfinder-screen.png",
-        explanation: "Outil de recherche de terrain de sport aux alentours"
+        explanation: t('projects.osmSportRequest_explanation')
     },
     cirilGroup : {
         id: 3,
@@ -52,9 +56,9 @@ const parameters = ref({
         link: "https://github.com/thomasguillet44/cirilGroup",
         git: "https://github.com/thomasguillet44/cirilGroup",
         image: "/simulationcirilgroup-screen.png",
-        explanation: "Simulateur basique de feu forêt"
+        explanation: t('projects.cirilGroup_explanation')
     }
-})
+}))
 
 </script>
 <style>

@@ -1,0 +1,74 @@
+{
+    "nav": {"study": "Formation", "experiences":"Expériences", "projects":"Projets"},
+    
+    "subtitle": {"job":"Développeur fullstack"},
+
+    "studies": {
+        "highschool": {
+            "name": "Lycée Eugène Livet", 
+            "class": "CPGE PTSI - PT*", 
+            "subject_title":"Matières étudiées", 
+            "math": "Mathématiques", 
+            "physics":"Physique-Chimie", 
+            "engineering":"Science de l'ingénieur",
+            "computer_science":"Informatique", 
+            "language": "Français et anglais",
+            "tipe": "TIPE : étude mécanique de la resistance des ponts aux intempéries"
+        },
+
+        "engineering_school": {
+            "name": "Télécom SudParis", 
+            "class": "Grande école d'ingénieur", 
+            "subject_title": "Tronc commun",
+            "math": "Statistiques, Probabilités", 
+            "network": "Réseau, Théorie du signal & communication, Optimisation",
+            "computer_science": "Bash, Java, PHP/Spring", 
+            "language": "Anglais, Italien, Sciences Humaines",
+            "speciality_title": "Spécialité", 
+            "speciality_content": "Analyse d'image et machine learning",
+            "project_title": "Projets", 
+            "project_content": "Reconnaissance des émotions par apprentissage par ordinateur, diagnostic de Alzheimer par analyse de voix"
+        }
+    }, 
+
+    "works": {
+        "setics": {
+            "job": "Développeur logiciel", 
+            "type": "Stage de fin d'étude",
+            "structure_subtitle": "Présentation de la structure",
+            "structure_description": "PME qui développe un logiciel STTAR, qui permet de prévisualiser un projet d'implémentation de fibre optique.",
+            "project_subtitle": "Projet", 
+            "project_descrition_1": "Développement d'un feature de requête",
+            "project_descrition_2": "sur le logiciel STTAR."
+        },
+        "bnf": {
+            "job": "Développeur web fullstack", 
+            "type": "CDI",
+            "structure_subtitle": "Présentation de la structure :", 
+            "structure_description": "Structure publique dépendante du ministère de la culture qui a un rôle d'aggrégation et de diffusion des oeuvres publiées en France, via le dépôt légal.",
+            "project_subtitle": "Projet", 
+            "projet_description_1": "Développement de ",
+            "projet_description_2": "le nouveau logiciel de catalogage.",
+            "projet_subdescription_1": "Outil de recherche d’entité via des fichiers", 
+            "projet_subdescription_2": " et l’utilisation de ", 
+            "projet_subdescription_3": "Mise en place d’un batch de modification de masse d’entité par import de fichier"
+        },
+        "mitsio": {
+            "job": "Développeur web fullstack", 
+            "type": "CDD",
+            "structure_subtitle": "Présentation de la structure :",
+            "structure_description": "Start-up française de collecte et d'analyse de données implantée au Togo",
+            "project_subtitle": "Projet", 
+            "projet_description_1": "Mitsio Motu vend un ", 
+            "geoportail": "géoportail", 
+            "projet_description_2": "Ce dernier est alimenté par des données obsolètes, j'ai donc mis en place un flux d'actualisation, avec une ",
+            "projet_description_strong": "plateforme web de validation de données"
+        }
+    }, 
+
+    "projects": {
+        "boggle_explanation": "Jeu en ligne, vous avez 3 minutes pour trouver le plus de mots possibles",
+        "osmSportRequest_explanation": "Outil de recherche de terrain de sport aux alentours",
+        "cirilGroup_explanation": "Simulateur basique de feu forêt"
+    }
+}

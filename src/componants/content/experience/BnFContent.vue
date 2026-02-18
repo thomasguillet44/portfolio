@@ -2,15 +2,17 @@
   <div class="tab-main-content">
     <div class="info-container">
       <p class="main-title">
-        <a href="https://www.bnf.fr/fr" target="_blank">Développeur web fullstack</a>
+        <a href="https://www.bnf.fr/fr" target="_blank">
+          {{$t('works.bnf.job')}}
+        </a>
       </p> 
+      <p>{{$t('works.bnf.type')}}</p>
       <p class="location">Paris, France</p> 
-      <p class="subtitle">Présentation de la structure :</p>
+      <p class="subtitle">{{$t('works.bnf.structure_subtitle')}}</p>
       <p> 
-          Structure publique dépendante du ministère de la culture qui a un rôle d'aggrégation 
-          et de diffusion des oeuvres publiées en France, via le dépôt légal.
+          {{$t('works.bnf.structure_description')}}
       </p>
-      <p class="subtitle">Projet : 
+      <p class="subtitle">{{$t('works.bnf.project_subtitle')}}
         <i class="icon-langage devicon-java-plain"></i> 
         <i class="icon-langage devicon-spring-original"></i> 
         <i class="icon-langage devicon-javascript-plain"></i> 
@@ -18,11 +20,11 @@
         <i class="icon-langage devicon-css3-plain"></i>
       </p>
       <p>
-        Développement de <a class="link-inP" href="https://www.bnf.fr/fr/suivre-les-evolutions-des-donnees" target="_blank"><strong>Noemi</strong></a>, 
-        le nouveau logiciel de catalogage. 
+        {{$t('works.bnf.projet_description_1')}} <a class="link-inP" href="https://www.bnf.fr/fr/suivre-les-evolutions-des-donnees" target="_blank"><strong>Noemi</strong></a>, 
+        {{$t('works.bnf.projet_description_2')}}
         <ul class="liste">
-          <li>Outil de recherche d’entité via des fichiers <strong>g4</strong> et l’utilisation de <strong>Solr</strong></li>
-          <li>Mise en place d’un batch de modification de masse d’entité par import de fichier</li>
+          <li>{{$t('works.bnf.projet_subdescription_1')}}<strong>g4</strong>{{$t('works.bnf.projet_subdescription_2')}}<strong>Solr</strong></li>
+          <li>{{$t('works.bnf.projet_subdescription_3')}}</li>
         </ul>
       </p>
     </div>

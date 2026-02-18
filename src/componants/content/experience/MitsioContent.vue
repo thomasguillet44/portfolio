@@ -2,14 +2,17 @@
   <div class="tab-main-content">
     <div class="info-container">
       <p class="main-title">
-        <a href="https://www.mitsiomotu.com/" target="_blank">Développeur web fullstack</a>
+        <a href="https://www.mitsiomotu.com/" target="_blank">
+          {{$t('works.mitsio.job')}}
+        </a>
       </p>
+      <p>{{$t('works.mitsio.type')}}</p>
       <p class="location">Lomé, Togo</p>
-      <p class="subtitle">Présentation de la structure :</p>
+      <p class="subtitle">{{$t('works.mitsio.structure_subtitle')}}</p>
       <p> 
-        Start-up française de collecte et d'analyse de données implantée au Togo
+        {{$t('works.mitsio.structure_description')}}
       </p>
-      <p class="subtitle">Projet :       
+      <p class="subtitle">{{$t('works.mitsio.project_subtitle')}}      
         <i class="icon-langage devicon-vuejs-plain"></i>
         <i class="icon-langage devicon-nodejs-plain"></i>       
         <i class="icon-langage devicon-docker-plain"></i>        
@@ -17,9 +20,8 @@
         <i class="icon-langage devicon-figma-plain"></i>       
       </p>
       <p>
-        Mitsio Motu vend un <a class="link-inP" href="https://geodata.gouv.tg/"><strong>géoportail</strong></a>.
-        Ce dernier est alimenté par des données obsolètes, j'ai donc mis en place un flux d'actualisation, avec
-        une <strong>plateforme web de validation de données</strong>.
+        {{$t('works.mitsio.projet_description_1')}} <a class="link-inP" href="https://geodata.gouv.tg/"><strong> {{$t('works.mistio.geoportail')}}</strong></a>.
+        {{$t('works.mitsio.projet_description_2')}}<strong>{{$t('works.mitsio.projet_description_strong')}}</strong>.
       </p>
       <p>
         <video controls src="/public/demo_plateforme_validation_v2.mp4" width="100%"></video>

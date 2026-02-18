@@ -1,0 +1,80 @@
+{
+    "nav": { 
+        "study": "Education", 
+        "experiences": "Experience", 
+        "projects": "Projects" 
+    },
+    
+    "subtitle": { 
+        "job": "Fullstack Developer" 
+    },
+
+    "studies": {
+        "highschool": {
+            "name": "Lycée Eugène Livet",
+            "class": "CPGE PTSI - PT* (Intensive Preparatory Classes)",
+            "subject_title": "Subjects Studied",
+            "math": "Mathematics",
+            "physics": "Physics & Chemistry",
+            "engineering": "Engineering Sciences",
+            "computer_science": "Computer Science",
+            "language": "French and English",
+            "tipe": "TIPE: Mechanical study of bridge resistance to weather conditions"
+        },
+
+        "engineering_school": {
+            "name": "Télécom SudParis",
+            "class": "Master’s Degree in Engineering",
+            "subject_title": "Core Curriculum",
+            "math": "Statistics, Probability",
+            "network": "Networks, Signal Theory & Communication, Optimization",
+            "computer_science": "Bash, Java, PHP/Spring",
+            "language": "English, Italian, Humanities",
+            "speciality_title": "Specialization",
+            "speciality_content": "Image Analysis and Machine Learning",
+            "project_title": "Projects",
+            "project_content": "Emotion recognition using machine learning, Alzheimer’s diagnosis through voice analysis"
+        }
+    },
+
+    "works": {
+        "setics": {
+            "job": "Software Developer",
+            "type": "Internship",
+            "structure_subtitle": "About the Company",
+            "structure_description": "SME developing STTAR software, which allows previewing a fiber optic network implementation project.",
+            "project_subtitle": "Project",
+            "project_descrition_1": "Development of a query feature",
+            "project_descrition_2": "within the STTAR software."
+        },
+        "bnf": {
+            "job": "Fullstack Web Developer",
+            "type": "Permanent Contract",
+            "structure_subtitle": "About the Organization:",
+            "structure_description": "Public institution under the Ministry of Culture, responsible for aggregating and distributing works published in France through legal deposit.",
+            "project_subtitle": "Project",
+            "projet_description_1": "Development of ",
+            "projet_description_2": "the new cataloging software.",
+            "projet_subdescription_1": "Entity search tool using file imports",
+            "projet_subdescription_2": " and the use of ",
+            "projet_subdescription_3": "Implementation of a bulk entity update batch process via file import"
+        },
+        "mitsio": {
+            "job": "Fullstack Web Developer",
+            "type": "Fixed-Term Contract",
+            "structure_subtitle": "About the Company:",
+            "structure_description": "French startup specialized in data collection and analysis, operating in Togo.",
+            "project_subtitle": "Project",
+            "projet_description_1": "Mistio Motu sells a ",
+            "geoportail": "geoportal",
+            "projet_description_2": "This one was powered by outdated data, so I implemented an update pipeline along with a ",
+            "projet_description_strong": "web-based data validation platform"
+        }
+    },
+
+    "projects": {
+        "boggle_explanation": "Online game where you have 3 minutes to find as many words as possible",
+        "osmSportRequest_explanation": "Tool to search for nearby sports fields",
+        "cirilGroup_explanation": "Basic forest fire simulation tool"
+    }
+}

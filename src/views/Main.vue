@@ -1,15 +1,15 @@
 <template>
     <ModalFormation 
-      v-show="parameters.education.visible"
-      @close="parameters.education.visible = false"
+      v-show="visibility.education"
+      @close="visibility.education = false"
     ></ModalFormation>
     <ModaleExperiencesPro 
-      v-show="parameters.work.visible"
-      @close="parameters.work.visible = false"
+      v-show="visibility.work"
+      @close="visibility.work = false"
     ></ModaleExperiencesPro>
     <ModalProjets 
-      v-show="parameters.projects.visible"
-      @close="parameters.projects.visible = false"
+      v-show="visibility.projects"
+      @close="visibility.projects = false"
     ></ModalProjets>
     <div class="main-content">
       <ContainerElement
@@ -23,42 +23,50 @@
     </div>
 </template>
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
+import { useI18n } from 'vue-i18n'
 import ContainerElement from '@/componants/ContainerElement.vue';
 import ModalFormation from '@/componants/modal/ModalFormation.vue';
 import ModalProjets from '@/componants/modal/ModalProjets.vue';
 import ModaleExperiencesPro from '@/componants/modal/ModaleExperiencesPro.vue';
 
-// TODO : a mettre dans une énum (a voir)
-const parameters = ref({
+const { t } = useI18n()
+
+// ref pour la visibilité des modales
+const visibility = ref({
+  education: false,
+  work: false,
+  projects: false
+})
+
+// computed pour la traduction
+const parameters = computed(() => ({
   education: {
     id: 1,
     icon: "bi bi-backpack-fill",
-    title: "Formation",
-    visible: false
+    title: t('nav.study'),
+    visible: visibility.value.education
   },
   work: {
     id: 2,
     icon: "bi bi-briefcase-fill",
-    title: "Expériences",
-    visible: false
+    title: t('nav.experiences'),
+    visible: visibility.value.work
   },
   projects: {
     id: 3,
     icon: "bi bi-code-slash",
-    title: "Projets",
-    visible: false
+    title: t('nav.projects'),
+    visible: visibility.value.projects
   }
-});
+}))
 
 function openModal(data) {
-  const id = data.id;
-  // parcourt les parameters, cherche celui avec l'id correspondant, et change la valeur de visible
-  for (const key in parameters.value) {
-    parameters.value[key].visible = parameters.value[key].id === id;
+  const id = data.id
+  for (const key in visibility.value) {
+    visibility.value[key] = parameters.value[key].id === id
   }
 }
-
 </script>
 <style>
 .main-content {
