@@ -1,4 +1,8 @@
 <template>
+  <button class="language-button" @click="toggleLang">
+      <i class="bi bi-arrow-return-right"></i>
+      <span class="label">{{ locale === 'fr' ? 'English' : 'Français' }}</span>
+    </button>
     <div class="name-owner">Thomas Guillet</div>
     <div class="work-occupation">{{$t('subtitle.job')}}</div>
     <div class="container-techno">
@@ -9,11 +13,6 @@
             :title="item.title"
         />
     </div>
-    <button class="language-button" @click="toggleLang">
-      <i class="bi bi-arrow-return-right"></i>
-      <span class="label">{{ locale === 'fr' ? 'English' : 'Français' }}</span>
-    </button>
-    
 </template>
 <script setup>
 import { ref } from 'vue';
@@ -73,14 +72,21 @@ function toggleLang() {
 }
 
 .language-button {
-  position: absolute;
-  top: 16px;
-  right: 16px;
+  margin: 5px;
   cursor: pointer;
   background-color: #121212;
   color: #F5F5F5;
   border: 2px solid #F5F5F5;
   border-radius: 3px;
+  font-size: 3vh;
+}
+
+@media (min-width: 769px) {
+  .language-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
 }
 
 .language-button:hover {
