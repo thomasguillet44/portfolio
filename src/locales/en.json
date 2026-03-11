@@ -75,6 +75,7 @@
     "projects": {
         "boggle_explanation": "Online game where you have 3 minutes to find as many words as possible",
         "osmSportRequest_explanation": "Tool to search for nearby sports fields",
-        "cirilGroup_explanation": "Basic forest fire simulation tool"
+        "cirilGroup_explanation": "Basic forest fire simulation tool",
+        "sportfinderv2_explanation": "Modernized version of sports field search via OSM"
     }
 }

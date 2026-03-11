@@ -57,6 +57,14 @@ const parameters = computed(() => ({
         git: "https://github.com/thomasguillet44/cirilGroup",
         image: "/simulationcirilgroup-screen.png",
         explanation: t('projects.cirilGroup_explanation')
+    }, 
+    sportfinderv2 : {
+        id: 4,
+        name: "Sport Finder V2",
+        link: "https://sportfinderv2.thomasgui.fr/",
+        git: "https://github.com/thomasguillet44/SportFinderv2",
+        image: "/sportfinderv2-screen.png",
+        explanation: t('projects.sportfinderv2_explanation')
     }
 }))
 

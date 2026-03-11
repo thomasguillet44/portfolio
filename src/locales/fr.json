@@ -69,6 +69,7 @@
     "projects": {
         "boggle_explanation": "Jeu en ligne, vous avez 3 minutes pour trouver le plus de mots possibles",
         "osmSportRequest_explanation": "Outil de recherche de terrain de sport aux alentours",
-        "cirilGroup_explanation": "Simulateur basique de feu forêt"
+        "cirilGroup_explanation": "Simulateur basique de feu forêt",
+        "sportfinderv2_explanation": "Version modernisé de recherche de terrains de sport via OSM"
     }
 }
